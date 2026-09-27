@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>KURDISTAN | Web Design & Digital Services | دروستکردنی وێبسایت</title>
+
+    <meta name="description"
+    content="KURDISTAN provides professional website design, CV design and advertisement design services. خزمەتگوزارییە دیجیتاڵییە پیشەییەکان بۆ دروستکردنی وێبسایت، دیزاینی CV و دیزاینی ڕیکلام.">
+
+    <meta name="keywords"
+    content="KURDISTAN, web design, website design, CV design, advertisement design, digital services, دروستکردنی وێبسایت, دیزاینی CV, دیزاینی ڕیکلام, خزمەتگوزارییە دیجیتاڵییەکان">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="language" content="Kurdish, English">
+
+    <meta name="author" content="KURDISTAN Digital Services">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+    content="KURDISTAN | Digital Services">
+
+    <meta property="og:description"
+    content="Website Design, CV Design and Advertisement Design | دروستکردنی وێبسایت، دیزاینی CV و ڕیکلام">
+
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Noto Sans Arabic',sans-serif;
+    background:#f5f9ff;
+    color:#102a43;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    background:white;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+.navbar{
+    max-width:1200px;
+    height:75px;
+    margin:auto;
+    padding:0 25px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    color:#0757c9;
+    font-size:26px;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+.logo span{
+    color:#102a43;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:27px;
+}
+
+.nav-links a{
+    color:#102a43;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#0757c9;
+}
+
+.menu{
+    display:none;
+    color:#0757c9;
+    font-size:25px;
+    cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:150px 25px 80px;
+
+    background:
+    linear-gradient(135deg,#eaf3ff,#ffffff);
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    color:#0757c9;
+    font-size:68px;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    color:#102a43;
+    font-size:29px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#526777;
+    font-size:18px;
+    line-height:2;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+
+    padding:14px 30px;
+    margin:6px;
+
+    border-radius:8px;
+
+    background:#0757c9;
+    color:white;
+
+    text-decoration:none;
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#043b8c;
+    transform:translateY(-3px);
+}
+
+.btn-outline{
+    background:white;
+    color:#0757c9;
+    border:2px solid #0757c9;
+}
+
+/* SECTIONS */
+
+section{
+    padding:90px 25px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:#0757c9;
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#607080;
+    font-size:17px;
+}
+
+/* ABOUT */
+
+.about{
+    background:white;
+}
+
+.about-box{
+    max-width:850px;
+    margin:auto;
+
+    text-align:center;
+
+    color:#526777;
+    font-size:18px;
+
+    line-height:2.1;
+}
+
+/* SERVICES */
+
+.services{
+    background:#f5f9ff;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+
+    padding:35px 25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    border:1px solid #e5effb;
+
+    box-shadow:0 8px 30px rgba(0,60,120,.08);
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 15px 35px rgba(0,60,120,.15);
+}
+
+.card-icon{
+    width:70px;
+    height:70px;
+
+    margin:0 auto 20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#e8f2ff;
+    color:#0757c9;
+
+    font-size:30px;
+}
+
+.card h3{
+    color:#102a43;
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+.card h4{
+    color:#0757c9;
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#687b8c;
+    line-height:1.8;
+}
+
+/* PRICING */
+
+.pricing{
+    background:white;
+}
+
+.price{
+    color:#0757c9;
+
+    font-size:45px;
+    font-weight:800;
+
+    margin:20px 0;
+}
+
+.price span{
+    color:#687b8c;
+    font-size:17px;
+}
+
+.order-btn{
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 25px;
+
+    background:#0757c9;
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:7px;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.order-btn:hover{
+    background:#043b8c;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#0757c9;
+    color:white;
+}
+
+.contact .section-title h2{
+    color:white;
+}
+
+.contact .section-title p{
+    color:#dcecff;
+}
+
+.contact-box{
+    text-align:center;
+}
+
+.contact-box p{
+    font-size:18px;
+    margin-bottom:12px;
+}
+
+.social{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+
+    margin-top:25px;
+}
+
+.social a{
+    width:55px;
+    height:55px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:white;
+    color:#0757c9;
+
+    font-size:25px;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.social a:hover{
+    transform:translateY(-5px);
+}
+
+/* FOOTER */
+
+footer{
+    background:#08233f;
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+}
+
+footer p{
+    margin:5px;
+}
+
+.footer-brand{
+    color:#5fa8ff;
+    font-weight:800;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    .nav-links{
+        position:absolute;
+
+        top:75px;
+        right:-100%;
+
+        width:100%;
+
+        padding:25px 0;
+
+        background:white;
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:20px;
+
+        transition:.3s;
+    }
+
+    .nav-links.active{
+        right:0;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero h2{
+        font-size:23px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+KURDISTAN<span>.</span>
+</div>
+
+<ul class="nav-links" id="navLinks">
+
+<li>
+<a href="#home">
+Home / سەرەتا
+</a>
+</li>
+
+<li>
+<a href="#about">
+About / دەربارە
+</a>
+</li>
+
+<li>
+<a href="#services">
+Services / خزمەتگوزاری
+</a>
+</li>
+
+<li>
+<a href="#pricing">
+Pricing / نرخەکان
+</a>
+</li>
+
+<li>
+<a href="#contact">
+Contact / پەیوەندی
+</a>
+</li>
+
+</ul>
+
+<div class="menu" id="menu">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>
+KURDISTAN
+</h1>
+
+<h2>
+Digital Services /
+خزمەتگوزارییە دیجیتاڵییەکان
+</h2>
+
+<p>
+
+Professional digital services for individuals and businesses.
+
+<br>
+
+خزمەتگوزارییە دیجیتاڵییە پیشەییەکان
+بۆ تاکەکەس و کاروبارەکان.
+
+</p>
+
+<a href="#pricing" class="btn">
+View Prices / بینینی نرخەکان
+</a>
+
+<a href="#contact" class="btn btn-outline">
+Contact Us / پەیوەندیمان پێوە بکە
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+About / دەربارە
+</h2>
+
+<p>
+KURDISTAN Digital Services
+</p>
+
+</div>
+
+<div class="about-box">
+
+<p>
+
+KURDISTAN provides modern and professional
+digital services for individuals and businesses.
+
+</p>
+
+<br>
+
+<p dir="rtl">
+
+KURDISTAN خزمەتگوزارییە دیجیتاڵییە نوێ و
+پیشەییەکان پێشکەش دەکات بۆ تاکەکەس و کاروبارەکان.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Services / خزمەتگوزارییەکان
+</h2>
+
+<p>
+Professional services / خزمەتگوزارییە پیشەییەکان
+</p>
+
+</div>
+
+
+<div class="cards">
+
+
+<!-- WEBSITE -->
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-code"></i>
+
+</div>
+
+<h3>
+Website Design
+</h3>
+
+<h4>
+دروستکردنی وێبسایت
+</h4>
+
+<p>
+
+Modern, responsive and professional
+websites for personal and business use.
+
+</p>
+
+<br>
+
+<p dir="rtl">
+
+وێبسایتی مۆدێرن و پیشەیی
+بۆ کەسی و کاروباری.
+
+</p>
+
+</div>
+
+
+<!-- CV -->
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-file-lines"></i>
+
+</div>
+
+<h3>
+CV Design
+</h3>
+
+<h4>
+دیزاینی CV
+</h4>
+
+<p>
+
+Professional and attractive CV design
+for jobs and opportunities.
+
+</p>
+
+<br>
+
+<p dir="rtl">
+
+دیزاینی CV ـی جوان و پیشەیی
+بۆ کار و دەرفەتەکان.
+
+</p>
+
+</div>
+
+
+<!-- ADVERTISEMENT -->
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-bullhorn"></i>
+
+</div>
+
+<h3>
+Advertisement Design
+</h3>
+
+<h4>
+دیزاینی ڕیکلام
+</h4>
+
+<p>
+
+Creative advertisement designs
+for businesses and social media.
+
+</p>
+
+<br>
+
+<p dir="rtl">
+
+دیزاینی ڕیکلامی جوان بۆ کاروبار
+و سۆشیال میدیا.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRICING -->
+
+<section class="pricing" id="pricing">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Pricing / نرخەکان
+</h2>
+
+<p>
+Simple prices / نرخەکانی ئاسان و ڕوون
+</p>
+
+</div>
+
+
+<div class="cards">
+
+
+<!-- WEBSITE -->
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+</div>
+
+<h3>
+Website Design
+</h3>
+
+<h4>
+دروستکردنی وێبسایت
+</h4>
+
+<div class="price">
+$50
+</div>
+
+<p>
+Professional Website Design
+</p>
+
+<p dir="rtl">
+دروستکردنی وێبسایتی پیشەیی
+</p>
+
+<a
+class="order-btn"
+target="_blank"
+href="https://wa.me/9647506331411?text=Hello%20KURDISTAN%2C%20I%20want%20to%20order%20a%20Website%20Design%20for%20%2450">
+
+Order / داواکاری
+</a>
+
+</div>
+
+
+<!-- CV -->
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-file-lines"></i>
+
+</div>
+
+<h3>
+CV Design
+</h3>
+
+<h4>
+دیزاینی CV
+</h4>
+
+<div class="price">
+$5
+</div>
+
+<p>
+Professional CV Design
+</p>
+
+<p dir="rtl">
+دیزاینی CV ـی پیشەیی
+</p>
+
+<a
+class="order-btn"
+target="_blank"
+href="https://wa.me/9647506331411?text=Hello%20KURDISTAN%2C%20I%20want%20to%20order%20a%20CV%20Design%20for%20%245">
+
+Order / داواکاری
+</a>
+
+</div>
+
+
+<!-- ADVERTISEMENT -->
+
+<div class="card">
+
+<div class="card-icon">
+
+<i class="fa-solid fa-bullhorn"></i>
+
+</div>
+
+<h3>
+Advertisement Design
+</h3>
+
+<h4>
+دیزاینی ڕیکلام
+</h4>
+
+<div class="price">
+$20
+</div>
+
+<p>
+Professional Advertisement Design
+</p>
+
+<p dir="rtl">
+دیزاینی ڕیکلامی پیشەیی
+</p>
+
+<a
+class="order-btn"
+target="_blank"
+href="https://wa.me/9647506331411?text=Hello%20KURDISTAN%2C%20I%20want%20to%20order%20an%20Advertisement%20Design%20for%20%2420">
+
+Order / داواکاری
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Contact / پەیوەندی
+</h2>
+
+<p>
+Contact us through WhatsApp or Instagram
+</p>
+
+<p dir="rtl">
+لە ڕێگەی WhatsApp یان Instagram پەیوەندیمان پێوە بکە
+</p>
+
+</div>
+
+
+<div class="contact-box">
+
+<p>
+WhatsApp: 07506331411
+</p>
+
+<p>
+WhatsApp: 07739603157
+</p>
+
+
+<div class="social">
+
+
+<a
+href="https://wa.me/9647506331411"
+target="_blank"
+title="WhatsApp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<a
+href="https://wa.me/9647739603157"
+target="_blank"
+title="WhatsApp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<a
+href="https://www.instagram.com/kurdistan.webdesign?stkn=MXF0cTd1ZG9qemkxdg%3D%3D&utm_source=qr"
+target="_blank"
+title="Instagram">
+
+<i class="fa-brands fa-instagram"></i>
+
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+
+© 2026
+
+<span class="footer-brand">
+KURDISTAN
+</span>
+
+</p>
+
+<p>
+
+Digital Services /
+خزمەتگوزارییە دیجیتاڵییەکان
+
+</p>
+
+</footer>
+
+
+<script>
+
+const menu =
+document.getElementById("menu");
+
+const navLinks =
+document.getElementById("navLinks");
+
+
+menu.addEventListener("click", function(){
+
+    navLinks.classList.toggle("active");
+
+});
+
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link){
+
+    link.addEventListener("click", function(){
+
+        navLinks.classList.remove("active");
+
+    });
+
+});
+
+</script>
+
+
+</body>
+
+</html>
